@@ -22,6 +22,10 @@ ul {
   padding: 0;
 }
 
+.break {
+  margin-top: 25px;
+}
+
 .header__container {
   grid-area: header;
 }
@@ -62,6 +66,10 @@ ul {
 .content {
   grid-area: content;
   padding: 0 10%;
+}
+
+.content a {
+  text-decoration: underline;
 }
 
 .footer__contianer {

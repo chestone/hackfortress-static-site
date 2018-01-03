@@ -1,12 +1,21 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 const HallOfFamePage = () => (
-  <div>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </div>
+  <article>
+    <section>
+      <h2>Shmoocon</h2>
+      <ul>
+        <li>
+          2009 - The Shmoobs
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>DEFCON</h2>
+      <ul>
+      </ul>
+    </section>
+  </article>
 )
 
 export default HallOfFamePage

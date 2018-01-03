@@ -11,9 +11,8 @@ const IndexPage = () => (
       Bonuses range from crits for the TF2, lighting the opposing team on fire, or preventing the other teams 
       hackers from accessing the store.
     </section>
-    <section>
-      <p>For more checkout our </p>
-      <Link to="/about/">About page</Link>
+    <section className="break">
+      <p>For more checkout our <Link to="/what-is-hackfortress/">about page</Link>.</p>
     </section>
   </div>
 )
