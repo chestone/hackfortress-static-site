@@ -2,15 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import Typography from 'typography'
+import twinPeaksTheme from 'typography-theme-twin-peaks'
 
 import Header from '../components/Header/Header'
 import NavBar from '../components/NavBar/NavBar'
+import Footer from '../components/Footer/Footer'
 
 import '../styles/reset.css'
 import '../styles/index.css'
+ 
+const typography = new Typography(twinPeaksTheme)
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="container">
     <Helmet
       title="Hackfortress"
       meta={[
@@ -18,13 +23,15 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'hackfortress, defcon, shmoocon, team fortress 2' },
       ]}
       link={[
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:400,500,700' },
+        { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
       ]}
     />
+    <Header />
     <NavBar />
-    <main>
+    <section className="content" role="main">
       {children()}
-    </main>
+    </section>
+    <Footer />
   </div>
 )
 
