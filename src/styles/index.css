@@ -73,7 +73,7 @@ ul {
 
 .content {
   grid-area: content;
-  padding: 0 10%;
+  padding: 0;
 }
 
 .content a {
@@ -116,5 +116,9 @@ ul {
   .container section, 
   .container footer {
     grid-column: span 4;
+  }
+
+  .content {
+    padding: 0 10%;
   }
 }
