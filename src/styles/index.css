@@ -38,6 +38,14 @@ ul {
   display: inline-block;
 }
 
+.hof__article {
+  display: flex;
+}
+
+.hof__list {
+  flex: 1;
+}
+
 .nav__container {
   grid-area: nav;
   background: rgb(106,69,52);
