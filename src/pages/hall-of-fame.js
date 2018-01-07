@@ -26,6 +26,12 @@ const HallOfFamePage = () => (
         <li>
             2015 - Mobile Disco
         </li>
+        <li>
+            2016 - Mobile Disco
+        </li>
+        <li>
+            2017 - Team SPARSA(RIT)
+        </li>
       </ul>
     </section>
     <section className="hof__list">
@@ -51,6 +57,12 @@ const HallOfFamePage = () => (
         </li>
         <li>
           2015 - Team Not Ready For This
+        </li>
+        <li>
+          2016 - Team Not Ready For This
+        </li>
+        <li>
+          2017 - Team Not Ready For This
         </li>
       </ul>
     </section>
