@@ -57,7 +57,7 @@ ul {
   transition: transform .3s ease-in-out;
 }
 
-#nav:target {
+.toggleNav {
   transform: translateX(340px);
 }
 

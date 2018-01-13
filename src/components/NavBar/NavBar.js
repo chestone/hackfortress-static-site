@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { toggleNav } from '../../utils/header'
+
 const NavBar = () => (
   <nav id="nav" className="nav__container"  role="navigation">
-    <a className="toggle__close fa fa-bars fa-2x" href="#"></a>
+    <a className="toggle__close fa fa-bars fa-2x" onClick={toggleNav}></a>
     <ul className="nav__list">
       <li className="nav__list-item">
         <Link to='/'>
