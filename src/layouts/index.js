@@ -24,6 +24,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
       link={[
         { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.10/flickity.min.css' },
       ]}
     />
     <Header />

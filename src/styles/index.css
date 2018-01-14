@@ -32,6 +32,7 @@ ul {
 
 .header__title {
   margin-left: 15px;
+  margin-bottom: 0;
 }
 
 .header__container .header__item {
@@ -40,6 +41,7 @@ ul {
 
 .hof__article {
   display: flex;
+  flex-direction: column;
 }
 
 .hof__list {
@@ -105,8 +107,55 @@ ul {
     "footer";
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-cell {
+  width: 300px;
+  height: 225px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  font-size: 80px;
+  color: white;
+}
+
+.flickity-page-dots {
+  bottom: 35px!important;
+}
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+.flickity-prev-next-button {
+  visibility: hidden;
+}
+
 @media only screen and (min-width : 600px) {
+  .carousel {
+    width: 75%;
+  }
+
+  .carousel-cell {
+    width: 600px;
+    height: 450px;
+    margin-right: 10px;
+  }
+
   .container {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -120,5 +169,13 @@ ul {
 
   .content {
     padding: 0 10%;
+  }
+
+  .flickity-prev-next-button {
+    visibility: visible;
+  }
+
+  .hof__article {
+    flex-direction: row;
   }
 }
