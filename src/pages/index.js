@@ -18,6 +18,11 @@ const IndexPage = () => (
         />
       <img 
         className="carousel-cell"
+        src="https://photos.smugmug.com/Travel/DEFCON-21/i-RtGs64j/0/47347755/M/DSC02299-M.jpg" 
+        alt="Hackfortress" 
+        />
+      <img 
+        className="carousel-cell"
         src="https://photos.smugmug.com/Travel/DEFCON-21/i-CRmpLkv/0/88307060/M/DSC02214-M.jpg" 
         alt="Hackfortress" 
         />
