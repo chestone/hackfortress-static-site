@@ -8,6 +8,9 @@ const Footer = () => (
         <a href="https://www.reddit.com/r/HackFortress/" className="fa fa-reddit-alien fa-3x" aria-hidden="true" />
       </li>
       <li className="footer__link-social">
+        <a href="https://www.instagram.com/hackfortress/" className="fa fa-instagram fa-3x" aria-hidden="true" />
+      </li>
+      <li className="footer__link-social">
         <a href="https://www.twitch.tv/hackfortresstv" className="fa fa-twitch fa-3x" aria-hidden="true" />
       </li>
       <li className="footer__link-social">
