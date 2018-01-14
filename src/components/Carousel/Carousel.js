@@ -1,5 +1,4 @@
 import React from 'react'
-// import Flickity from 'flickity'
 
 export default class Carousel extends React.Component {
   componentDidMount() {
