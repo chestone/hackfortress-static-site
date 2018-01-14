@@ -7,6 +7,11 @@ const HallOfFamePage = () => (
     <Carousel>
       <img 
         className="carousel-cell"
+        src="https://photos.smugmug.com/Travel/DEFCON-21/i-4dPpMMD/0/28fd7bfd/M/DSC02353-M.jpg" 
+        alt="Winner DEFCON 21" 
+        />
+      <img 
+        className="carousel-cell"
         src="https://photos.smugmug.com/Events/Hackfortress-Photos/i-3B54Xjm/0/4a3541e8/M/NOT_READY_FOR_THIS-M.jpg" 
         alt="Winner Shmoocon 2016" 
         />

@@ -108,13 +108,12 @@ ul {
 }
 
 .carousel {
-  width: 100%;
+  width: 300px;
   margin: 0 auto;
 }
 
 .carousel-cell {
   width: 300px;
-  height: 225px;
   background: #8C8;
   counter-increment: gallery-cell;
   margin-right: 1.1rem;
@@ -147,13 +146,13 @@ ul {
 }
 
 @media only screen and (min-width : 600px) {
+
   .carousel {
-    width: 75%;
+    width: 600px;
   }
 
   .carousel-cell {
     width: 600px;
-    height: 450px;
   }
 
   .container {
