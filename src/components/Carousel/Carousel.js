@@ -1,21 +1,31 @@
 import React from 'react'
-import Flickity from 'react-flickity-component'
+// import Flickity from 'flickity'
 
-const flickityOptions = {
-  autoPlay: true,
-  cellAlign: "center",
-  contain: true,
-  imagesLoaded: true,
-  initialIndex: 2
+export default class Carousel extends React.Component {
+  componentDidMount() {
+      const carousel = this.refs.carousel
+      const options = {
+        autoPlay: true,
+        cellAlign: "center",
+        contain: true,
+        imagesLoaded: true,
+        initialIndex: 2
+      }
+      const Flickity = require('flickity')
+      this.flkty = new Flickity(carousel, options)
+  }
+
+  componentWillUnmount() {
+    if (this.flkty) {
+      this.flkty.destroy()
+    }
+  }
+
+  render() {
+    return (
+      <div ref='carousel' className='carousel'>
+        {this.props.children}
+      </div>
+    )
+  }
 }
-
-const Carousel = ({children}) => (
-  <Flickity
-    className="carousel"
-    options={flickityOptions}
-  >
-    {children}
-  </Flickity>
-)
-
-export default Carousel

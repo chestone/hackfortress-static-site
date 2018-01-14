@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Cheston Lee <chestonlloyd@gmail.com>",
   "dependencies": {
+    "flickity": "^2.0.10",
     "gatsby": "^1.9.138",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-react-helmet": "^1.0.8",
