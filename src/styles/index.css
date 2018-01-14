@@ -57,6 +57,7 @@ ul {
   width: 300px;
   left: -340px;
   transition: transform .3s ease-in-out;
+  z-index: 1;
 }
 
 .toggleNav {

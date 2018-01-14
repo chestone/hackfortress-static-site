@@ -10,7 +10,9 @@
     "gatsby-plugin-google-analytics": "^1.0.15",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-react-next": "^1.0.7",
+    "gatsby-plugin-twitter": "^1.0.14",
     "gatsby-plugin-typography": "^1.7.10",
+    "gatsby-source-filesystem": "^1.5.11",
     "typography": "^0.16.6",
     "typography-theme-twin-peaks": "^0.15.11"
   },
