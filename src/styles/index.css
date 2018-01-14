@@ -77,6 +77,14 @@ ul {
 .content {
   grid-area: content;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+}
+
+.content__main,
+.content__timeline {
+  grid-column: span 4;
 }
 
 .content a {
@@ -146,7 +154,7 @@ ul {
   visibility: hidden;
 }
 
-@media only screen and (min-width : 600px) {
+@media only screen and (min-width : 1024px) {
 
   .carousel {
     width: 600px;
@@ -162,13 +170,22 @@ ul {
 
   .container header,
   .container nav,
-  .container section, 
+  .container main, 
   .container footer {
     grid-column: span 4;
   }
 
   .content {
     padding: 0 10%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .content__main {
+    grid-column: span 3;
+  }
+
+  .content__timeline {
+    grid-column: span 1;
   }
 
   .flickity-prev-next-button {

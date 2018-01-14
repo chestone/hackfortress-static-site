@@ -7,6 +7,7 @@ module.exports = {
     `gatsby-plugin-typography`,
     `gatsby-plugin-react-helmet`, 
     `gatsby-plugin-react-next`,
+    `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

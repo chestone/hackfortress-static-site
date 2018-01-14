@@ -8,6 +8,7 @@ import twinPeaksTheme from 'typography-theme-twin-peaks'
 import Header from '../components/Header/Header'
 import NavBar from '../components/NavBar/NavBar'
 import Footer from '../components/Footer/Footer'
+import Timeline from '../components/Timeline/Timeline'
 
 import '../styles/reset.css'
 import '../styles/index.css'
@@ -29,9 +30,14 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header />
     <NavBar />
-    <section className="content" role="main">
-      {children()}
-    </section>
+    <main className="content" role="main">
+      <section className="content__main">
+        {children()}
+      </section>
+      <section className="content__timeline">
+        <Timeline />
+      </section>
+    </main>
     <Footer />
   </div>
 )
