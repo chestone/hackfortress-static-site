@@ -4,7 +4,7 @@ export default class Timeline extends React.Component {
   render() {
     return (
       <a 
-        class="twitter-timeline" 
+        className="twitter-timeline" 
         data-width="400" 
         data-height="600" 
         data-theme="light" 
