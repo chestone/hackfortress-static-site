@@ -62,6 +62,9 @@ const HallOfFamePage = () => (
           <li>
               2017 - Team SPARSA(RIT)
           </li>
+          <li>
+              2018 - Team Not Ready For This
+          </li>
         </ul>
       </section>
       <section className="hof__list">
