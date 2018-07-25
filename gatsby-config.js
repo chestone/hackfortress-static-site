@@ -1,6 +1,18 @@
 module.exports = {
+  pathPrefix: `/hackfortress-static-site`,
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: `Hackfortress`,
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: [
+    `gatsby-plugin-typography`,
+    `gatsby-plugin-react-helmet`, 
+    `gatsby-plugin-twitter`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-3581973-2",
+        anonymize: true,
+      },
+    },
+  ],
 }
